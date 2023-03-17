@@ -1,0 +1,12 @@
+Step 1
+: Create a new React app using CRA
+npx create-react-app myapp//command is used
+Step 2: Install Cypress
+npm install cypress --save-dev
+Step 3: Create a simple React app using useRef hook
+Step 4: Write test cases in Cypress
+
+cy.get('p').should('have.text', 'Count: 0');
+This will make the test case fail because the count value is no longer being updated.
+After we have removed the useRef hook, we need to update 
+the test case in cypress/integration/counter.spec.js to make it fail
